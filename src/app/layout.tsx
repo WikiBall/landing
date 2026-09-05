@@ -1,17 +1,11 @@
 import type { Metadata, Viewport } from "next";
-import { TikTok_Sans, Noto_Serif } from "next/font/google";
+import { TikTok_Sans } from "next/font/google";
 import "./globals.css";
 import { Organization, WithContext } from "schema-dts";
 
 const tiktokSans = TikTok_Sans({
   subsets: ["latin"],
   variable: "--font-tiktok-sans",
-}),
-
-const notoSerif = Noto_Serif({
-  subsets: ["latin"],
-  weight: ["600", "700"],
-  variable: "--font-noto-serif",
 });
 
 export const metadata: Metadata = {
