@@ -325,7 +325,7 @@ export default function Home() {
       <section className="relative overflow-hidden">
         <div className="relative mx-auto flex max-w-[1600px] flex-col px-6 pb-40 pt-16 sm:pb-48 lg:min-h-[520px] lg:px-12 lg:pb-20 lg:pt-20">
           <div className="w-full max-w-[calc(100%-120px)] animate-[fadeInUp_700ms_ease-out] sm:max-w-[760px] lg:my-auto">
-            <h1 className="font-serif text-4xl font-semibold leading-[1.1] text-body sm:text-5xl lg:text-[64px]">
+            <h1 className="font-sans text-4xl font-semibold leading-[1.1] text-body sm:text-5xl lg:text-[64px]">
               Wiki hosting{" "}
               <HeroTagline />
             </h1>
@@ -358,7 +358,7 @@ export default function Home() {
                   className="flex flex-col border-b border-r border-line px-8 py-10 lg:min-h-[360px] lg:px-10"
                 >
                   <FeatureIcon src={f.icon} />
-                  <h2 className="mt-8 font-serif text-2xl font-bold text-body">
+                  <h2 className="mt-8 font-sans text-2xl font-bold text-body">
                     {f.title}
                   </h2>
                   <p className="mt-4 text-base leading-relaxed text-body/90">
@@ -376,7 +376,7 @@ export default function Home() {
         <div className="mx-auto max-w-[1440px] px-6 py-20 lg:px-12 lg:py-28">
           <div className="grid gap-12 lg:grid-cols-[minmax(0,400px)_1fr] lg:gap-20">
             <div>
-              <h2 className="font-serif text-4xl font-semibold leading-[1.15] text-body">
+              <h2 className="font-sans text-4xl font-semibold leading-[1.15] text-body">
                 Fast by default.
               </h2>
               <p className="mt-5 text-base leading-relaxed text-body/90">
@@ -406,7 +406,7 @@ export default function Home() {
       {/* FAQ */}
       <section className="bg-background">
         <div className="mx-auto max-w-[1100px] px-6 py-20 lg:px-12 lg:py-28">
-          <h2 className="font-serif text-4xl font-semibold text-body">
+          <h2 className="font-sans text-4xl font-semibold text-body">
             Frequently asked questions
           </h2>
           <div className="mt-10">
@@ -418,11 +418,11 @@ export default function Home() {
       {/* CTA */}
       <section className="bg-background">
         <div className="mx-auto max-w-[1600px] px-6 pb-24 lg:px-12">
-          <h2 className="font-serif text-5xl font-semibold text-body sm:text-6xl lg:text-[64px]">
+          <h2 className="font-sans text-5xl font-semibold text-body sm:text-6xl lg:text-[64px]">
             Ready to get started?
           </h2>
           <p className="mt-4 text-base font-light text-body/90">
-            Start your wiki journey with us (it’s free, forever).
+            Start your wiki journey with us (it's free, forever).
           </p>
           <div className="mt-8">
             <GetStartedButton />
@@ -440,20 +440,22 @@ export default function Home() {
         />
         <div className="relative z-10 mx-auto flex max-w-[1600px] flex-col items-center gap-3 px-6 py-10 text-center lg:px-12">
           <div className="flex items-center gap-2">
-            <img src="/WikiOasis.png" alt="" className="h-6 w-6" aria-hidden />
-            <span className="font-serif text-lg font-semibold text-title">
+            <img src="/WikiBall.png" alt="" className="h-6 w-6" aria-hidden />
+            <span className="font-sans text-lg font-semibold text-title">
               WikiOasis
             </span>
           </div>
           <p className="flex flex-wrap items-center justify-center gap-x-3 gap-y-1 text-sm text-body/80">
-            <InternalLink href="https://meta.wikioasis.org">Meta-Wiki</InternalLink>
+            <InternalLink href="https://meta.wikiball.org">Meta-Wiki</InternalLink>
             <span className="h-[4px] w-[4px] rounded-full bg-body/40" />
-            <InternalLink href="https://phorge.wikioasis.org">Phorge</InternalLink>
+            <InternalLink href="https://phorge.wikiball.org">Phorge</InternalLink>
             <span className="h-[4px] w-[4px] rounded-full bg-body/40" />
             <ExternalLink href={discordLink}>Discord</ExternalLink>
+            <span className="h-[4px] w-[4px] rounded-full bg-body/40" />
+            <ExternalLink href="https://dragonballz.miraheze.org">Dragon Ball Z Wiki</ExternalLink>
           </p>
           <p className="text-sm text-body/70" suppressHydrationWarning>
-            &copy; 2024–{new Date().getFullYear()} WikiOasis. All rights reserved.
+            &copy; 2026 WikiBall. All rights reserved.
           </p>
         </div>
       </footer>
