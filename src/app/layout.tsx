@@ -105,7 +105,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${tiktokSans.variable} ${notoSerif.variable} font-sans subpixel-antialiased bg-background text-body`}
+        className={`${tiktokSans.variable} font-sans subpixel-antialiased bg-background text-body`}
       >
         <script
           type="application/ld+json"
